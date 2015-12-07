@@ -11,6 +11,7 @@
 		9E26B0781C151D8200C0AE1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E26B0771C151D8200C0AE1C /* main.m */; };
 		9E26B07A1C151D8200C0AE1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E26B0791C151D8200C0AE1C /* Assets.xcassets */; };
 		9E26B07D1C151D8200C0AE1C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E26B07B1C151D8200C0AE1C /* MainMenu.xib */; };
+		9E26B0861C151DDB00C0AE1C /* API.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E26B0851C151DDB00C0AE1C /* API.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,8 @@
 		9E26B0791C151D8200C0AE1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E26B07C1C151D8200C0AE1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		9E26B07E1C151D8200C0AE1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E26B0841C151DDB00C0AE1C /* API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
+		9E26B0851C151DDB00C0AE1C /* API.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = API.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +56,8 @@
 		9E26B0721C151D8200C0AE1C /* iTunes Artwork Grabber */ = {
 			isa = PBXGroup;
 			children = (
+				9E26B0841C151DDB00C0AE1C /* API.h */,
+				9E26B0851C151DDB00C0AE1C /* API.m */,
 				9E26B0731C151D8200C0AE1C /* AppDelegate.h */,
 				9E26B0741C151D8200C0AE1C /* AppDelegate.m */,
 				9E26B0791C151D8200C0AE1C /* Assets.xcassets */,
@@ -140,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E26B0861C151DDB00C0AE1C /* API.m in Sources */,
 				9E26B0781C151D8200C0AE1C /* main.m in Sources */,
 				9E26B0751C151D8200C0AE1C /* AppDelegate.m in Sources */,
 			);
