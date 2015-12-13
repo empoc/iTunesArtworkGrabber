@@ -20,11 +20,35 @@
 #define kEntity_MusicVideo @"musicVideo"
 #define kEntity_ShortFilm @"shortFilm"
 
+#define kArtworkStandardURL @"artworkstandardurl"
+#define kArtworkHiResURL @"artworkhiresurl"
+#define kTitle @"title"
+
+#define kSearchCompletedNotification @"kSearchCompletedNotification";
+
+typedef enum {
+    
+    kArtworkResStandard,
+    kArtworkResHiDef
+    
+} ArtworkResolution;
+
+@class API;
+@protocol APIDelegate
+
+- (void)searchDidComplete:(API *)sender error:(NSError *)error;
+
+@end
+
 @interface API : NSObject
+
+@property (nonatomic, weak) id <APIDelegate> delegate;
 
 + (id)searchWithTerm:(NSString *)term country:(NSString *)country andEntity:(NSString *)entity;
 - (id)initWithTerm:(NSString *)term country:(NSString *)country andEntity:(NSString *)entity;
 
-- (NSArray *)result;
+
+- (NSDictionary *)parsedResult;
+- (NSArray *)formattedResult;
 
 @end

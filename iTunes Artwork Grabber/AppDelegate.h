@@ -7,8 +7,18 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "API.h"
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate, APIDelegate, NSComboBoxDelegate, NSComboBoxDataSource, NSControlTextEditingDelegate>
+
+@property (nonatomic, retain) IBOutlet NSTextField *searchText;
+@property (nonatomic, retain) IBOutlet NSComboBox *selectBoxCountry;
+@property (nonatomic, retain) IBOutlet NSPopUpButton *selectBoxType;
+
+@property (nonatomic, retain) NSMutableArray *countriesCombo;
+@property (nonatomic, retain) NSMutableArray *filteredCountriesCombo;
+
+- (IBAction)search:(id)sender;
 
 
 @end

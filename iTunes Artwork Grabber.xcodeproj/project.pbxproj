@@ -12,6 +12,7 @@
 		9E26B07A1C151D8200C0AE1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E26B0791C151D8200C0AE1C /* Assets.xcassets */; };
 		9E26B07D1C151D8200C0AE1C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E26B07B1C151D8200C0AE1C /* MainMenu.xib */; };
 		9E26B0861C151DDB00C0AE1C /* API.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E26B0851C151DDB00C0AE1C /* API.m */; };
+		9EF05F181C1D4CAB00C54E68 /* Countries.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9EF05F171C1D4CAB00C54E68 /* Countries.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9E26B07E1C151D8200C0AE1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E26B0841C151DDB00C0AE1C /* API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
 		9E26B0851C151DDB00C0AE1C /* API.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = API.m; sourceTree = "<group>"; };
+		9EF05F171C1D4CAB00C54E68 /* Countries.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Countries.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				9E26B07B1C151D8200C0AE1C /* MainMenu.xib */,
 				9E26B07E1C151D8200C0AE1C /* Info.plist */,
 				9E26B0761C151D8200C0AE1C /* Supporting Files */,
+				9EF05F171C1D4CAB00C54E68 /* Countries.plist */,
 			);
 			path = "iTunes Artwork Grabber";
 			sourceTree = "<group>";
@@ -134,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E26B07A1C151D8200C0AE1C /* Assets.xcassets in Resources */,
+				9EF05F181C1D4CAB00C54E68 /* Countries.plist in Resources */,
 				9E26B07D1C151D8200C0AE1C /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +291,7 @@
 				9E26B0831C151D8200C0AE1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
